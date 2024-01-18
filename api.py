@@ -8,7 +8,7 @@ ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 URL = "http://localhost:8000/"
 
 def generate_alias():
-    
+    # possibly offer custom urls
     return generate(ALPHABET, size=16)
 
 
@@ -18,7 +18,7 @@ def index():
 
 @app.post("/short/{link}")
 def shorten(link: str):
-    # save link to database
     # generate shortened alias for link
+    # save link to database alongside alias
     # return shortened link
     
